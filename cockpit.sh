@@ -11,4 +11,4 @@ fi
 echo 'deb http://deb.debian.org/debian buster-backports main' > /etc/apt/sources.list.d/backports.list
 apt update
 
-apt install -t buster-backports cockpit
+apt install -t buster-backports cockpit -y
