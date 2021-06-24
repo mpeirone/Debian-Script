@@ -19,4 +19,4 @@ git clone https://github.com/mpeirone/Debian-Script.git
 find ./Debian-Script -type f -iname "*.sh" -exec chmod +x {} \;
 cd Debian-Script
 ./scriptname.sh
-``
+```
