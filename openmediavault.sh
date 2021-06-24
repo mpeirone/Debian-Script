@@ -6,5 +6,5 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-#install from https://github.com/OpenMediaVault-Plugin-Developers/installScript
+#thanks to https://github.com/OpenMediaVault-Plugin-Developers/installScript
 wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
