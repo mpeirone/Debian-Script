@@ -1,0 +1,18 @@
+get disk id:
+  ls -l /dev/disk/by-id/
+create pool:
+  zpool create pool1 raidz id1 id2 id3
+add cache to pool:
+  zpool add pool1 cache id4
+export pool:
+  zpool export pool1
+list zpool to import:
+  zpool import
+import pool:
+  zpool import pool1
+Replace disk:
+  Put offline damaged disk:
+    zpool offline pool1 id3
+  Change disk
+  or replace disk id in pool device
+    zpool replace pool1 old1 newid
