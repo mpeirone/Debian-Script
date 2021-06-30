@@ -13,4 +13,4 @@ echo 'export PATH="$PATH:/snap/bin"'  >> ~/.bashrc
 snap install microk8s --classic
 echo "alias kubectl='microk8s kubectl'"  >> ~/.bash_aliases
 
-sudo usermod -a -G microk8s $(whoami)
+usermod -a -G microk8s $(whoami)
