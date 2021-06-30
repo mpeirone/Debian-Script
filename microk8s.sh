@@ -11,7 +11,6 @@ apt update
 apt install snapd -yy
 echo 'export PATH="$PATH:/snap/bin"'  >> ~/.bashrc
 snap install microk8s --classic
-echo "alias kubectl='microk8s kubectl'"  >> ~/.bash_aliases
 
-echo 'now run "sudo usermod -a -G microk8s $(whoami)" and reboot'
+echo 'now run microk8s_cust.sh and reboot'
 
