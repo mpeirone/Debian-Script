@@ -7,7 +7,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 #thanks to https://github.com/linuxdabbler/debian-install-scripts/blob/master/zfs.sh
-
+sed -i 's/main/main non-free/g' /etc/apt/sources.list
 # Install headers for  your kernel 
 sudo apt install linux-headers-"$(uname -r)" linux-image-amd64 -yy
 
