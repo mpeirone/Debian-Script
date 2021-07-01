@@ -8,7 +8,7 @@ fi
 
 #thanks to https://cockpit-project.org/running#debian
 
-echo 'deb http://deb.debian.org/debian buster-backports main' > /etc/apt/sources.list.d/backports.list
+echo 'deb http://deb.debian.org/debian buster-backports main contrib non-free' > /etc/apt/sources.list.d/backports.list
 apt update
 
 apt install -t buster-backports cockpit -y
