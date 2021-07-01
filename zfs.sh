@@ -7,6 +7,8 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 #thanks to https://github.com/linuxdabbler/debian-install-scripts/blob/master/zfs.sh
+
+#add non free package
 sed -i 's/main/main non-free/g' /etc/apt/sources.list
 
 apt update
