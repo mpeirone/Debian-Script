@@ -8,8 +8,8 @@ fi
 
 #thanks to https://github.com/linuxdabbler/debian-install-scripts/blob/master/zfs.sh
 
-#add non free package
-sed -i 's/main/main non-free/g' /etc/apt/sources.list
+#add buster-backports
+echo 'deb http://deb.debian.org/debian buster-backports main contrib non-free' > /etc/apt/sources.list.d/backports.list
 
 apt update
 # Install headers for  your kernel 
