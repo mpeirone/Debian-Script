@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #not root check
-if [[ $EUID -e 0 ]]; then
+if [[ $EUID -eq 0 ]]; then
    echo "This script must be run as not root" 
    exit 1
 fi
