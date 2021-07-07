@@ -4,4 +4,12 @@ Add node(run on master node):
 Portainer:
   microk8s enable portainer
 LoadBalancer:
-  microk8s enable metallb:192.168.10.200-192.168.10.210
+  microk8s enable metallb:192.168.10.200-192.168.10.210  
+Make cluster more responsive(after that reboot or restart microk8s):
+  echo '--node-monitor-period="2s"' >> /var/snap/microk8s/current/args/kube-controller-manager
+  echo '--node-monitor-grace-period="10s"' >> /var/snap/microk8s/current/args/kube-controller-manager
+
+  echo '--node-status-update-frequency="2s"' >> /var/snap/microk8s/current/args/kubelet
+
+  echo '--default-not-ready-toleration-seconds=60' >> /var/snap/microk8s/current/args/kube-apiserver
+  echo '--default-unreachable-toleration-seconds=60' >> /var/snap/microk8s/current/args/kube-apiserver
