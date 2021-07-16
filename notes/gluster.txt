@@ -3,7 +3,7 @@ aggiungere server al pool(non quello locale):
 controllare stato peer
   gluster peer status
 creazione volume distribuito:
-  gluster volume create nomevolume transport tcp 192.168.0.34:/cartella 192.168.0.100:/cartella
+  gluster volume create nomevolume replica 2 transport tcp 192.168.0.34:/cartella 192.168.0.100:/cartella
  avvio volume:
   gluster volume start nomevolume
  stato volume:
