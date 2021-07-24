@@ -4,6 +4,8 @@ create pool:
   zpool create pool1 raidz id1 id2 id3
 add cache to pool:
   zpool add pool1 cache id4
+add log to pool:
+  zpool add pool1 log id5
 export pool:
   zpool export pool1
 list zpool to import:
