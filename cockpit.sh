@@ -12,3 +12,4 @@ echo 'deb http://deb.debian.org/debian buster-backports main contrib non-free' >
 apt update
 
 apt install -t buster-backports cockpit -y
+#enable network interfaces management using https://wiki.debian.org/it/NetworkManager#Abilitare_la_gestione_delle_interfacce
