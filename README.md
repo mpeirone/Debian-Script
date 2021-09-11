@@ -29,4 +29,10 @@ address 192.168.1.200
 netmask 255.255.255.0
 gateway 192.168.1.1
 ```
-
+Permission Command
+```
+chmod nnn /directory #change permission
+chown newowner /directory #change directory owner
+chgrp newgroup /directory #change directory group
+chattr +i /directory #make immutable directory 
+```
