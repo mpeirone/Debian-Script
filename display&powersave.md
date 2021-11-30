@@ -9,7 +9,7 @@ AllowSuspendThenHibernate=no
 AllowHybridSleep=no
 ```
 
-Change display blanking time:
+Change display blanking time(not work from ssh):
 ```
  setterm -blank [minute]
 ```
