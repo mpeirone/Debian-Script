@@ -8,7 +8,7 @@ fi
 
 #thanks to https://github.com/linuxdabbler/debian-install-scripts/blob/master/zfs.sh
 
-#add buster-backports
+#add backports
 echo 'deb http://deb.debian.org/debian bullseye-backports main contrib non-free' > /etc/apt/sources.list.d/backports.list
 
 apt update
