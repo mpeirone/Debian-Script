@@ -1,5 +1,7 @@
 get disk id:
   ls -l /dev/disk/by-id/
+stuatus pool:
+  zpool status pool1
 create pool:
   zpool create pool1 raidz id1 id2 id3
 add cache to pool:
